@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Browsing Mixture</string>
+    <string name="search_here_hint">Search Here</string>
+    <string name="image_view_desc">Search Image Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="additional_options_fab_btn">Additional Options</string>
+    <string name="common_search_fab_btn">Common Search</string>
+    <string name="app_setting_fab_btn">Application Settings</string>
+    <string name="show_additional_option_fab_btn">Show Additional Option Button</string>
+    <string name="speak_to_search_img_btn">Speak To Search</string>
+</resources>
