@@ -149,7 +149,7 @@ public class BrowsingFragment extends Fragment {
     public void reloadWebView(String url) {
         //if(this.isVisible()) {
             webView.loadUrl(url);
-            Toast.makeText(getContext(), "visible-"+url, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getContext(), "visible-"+url, Toast.LENGTH_SHORT).show();
         //}
     }
 }

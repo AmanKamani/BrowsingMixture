@@ -62,6 +62,7 @@ public class TestingWebView extends AppCompatActivity {
         searchEngineTypes.add(Utility.SearchEngine.GOOGLE);
         searchEngineTypes.add(Utility.SearchEngine.BING);
         searchEngineTypes.add(Utility.SearchEngine.DUCKDUCKGO);
+        searchEngineTypes.add(Utility.SearchEngine.YOUTUBE);
 
         adapter = new BrowsingFragmentAdapter(this, searchEngineTypes);
         viewPager2.setAdapter(adapter);
@@ -72,7 +73,8 @@ public class TestingWebView extends AppCompatActivity {
         tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager2, true, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                tab.setText(Utility.getSearchEngineName(searchEngineTypes.get(position)));
+                //tab.setText(Utility.getSearchEngineName(searchEngineTypes.get(position)));
+                tab.setIcon(Utility.getSearchEngineIcon(getApplicationContext(), searchEngineTypes.get(position)));
             }
         });
         tabLayoutMediator.attach();
